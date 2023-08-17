@@ -1,5 +1,6 @@
 import { Carousel, Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 
 function Slider() {
   const navigate=useNavigate();
@@ -12,9 +13,11 @@ function Slider() {
           className="w-100"
         />
         <Carousel.Caption>
-          <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productmen')}>MEN</Button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productwomen')}>WOMEN</Button>
+          {/* <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
           &nbsp;&nbsp;
-          <button className="shopmenbtn"  onClick={()=>navigate('/productwomen')}>Shop Women</button>
+          <button className="shopmenbtn"  onClick={()=>navigate('/productwomen')}>Shop Women</button> */}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -25,9 +28,11 @@ function Slider() {
           className="w-100"
         />
         <Carousel.Caption>
-          <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productmen')}>MEN</Button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productwomen')}>WOMEN</Button>
+          {/* <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
           &nbsp;&nbsp;
-          <button className="shopmenbtn"  onClick={()=>navigate('/productwomen')}>Shop Women</button>
+          <button className="shopmenbtn"  onClick={()=>navigate('/productwomen')}>Shop Women</button> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -38,9 +43,11 @@ function Slider() {
         />
 
         <Carousel.Caption>
-          <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productmen')}>MEN</Button>&nbsp;&nbsp;
+        <Button variant="primary" onClick={()=>navigate('/productwomen')}>WOMEN</Button>
+          {/* <button className="shopmenbtn" onClick={()=>navigate('/productmen')}>Shop Men</button>&nbsp;&nbsp;
           &nbsp;&nbsp;
-          <button className="shopmenbtn" onClick={()=>navigate('/productwomen')}>Shop Women</button>
+          <button className="shopmenbtn" onClick={()=>navigate('/productwomen')}>Shop Women</button> */}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
