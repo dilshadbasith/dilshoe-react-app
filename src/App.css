@@ -1,38 +1,267 @@
-.App {
+* {
+  padding: 3px;
+}
+/* .App {
+  text-align: center;
+} */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 500px; */
+  border-style: solid;
+  border-width: 2px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.heading {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bt {
+  color: rgb(0, 179, 255);
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logindiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+}
+.shopmenbtn {
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  transition: 0.3s;
+}
+.shopmenbtn:hover {
+  background-color: rgb(63, 63, 63);
+  color: aliceblue;
+}
+.viewshoe {
+  background-color: rgb(92, 92, 92);
+  color: aliceblue;
+  padding: 5px 25px 5px 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  transition: 0.3s;
+}
+.viewshoe:hover {
+  transform: scale(1.1);
+}
+.productsdiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.arrival {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(251, 241, 228);
+}
+.dilshoe {
+  letter-spacing: 3px;
+  color: rgb(135, 102, 58);
+}
+
+.contactdilshoe {
+  color: rgb(135, 102, 58);
+}
+.contactshop {
+  color: rgb(135, 102, 58);
+}
+.shopmenh2 {
+  text-align: center;
+}
+.browsediv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.browsechild {
+  background-color: rgb(237, 237, 237);
+  width: 45vw;
+  padding: 20px;
+}
+.browseimage {
+  height: 80vh;
+  width: 40vw;
+}
+.browsename {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.browseprice {
+  color: rgb(144, 144, 144);
+}
+.browsecat {
+  color: rgb(144, 144, 144);
+  font-weight: bold;
+}
+.countbtn {
+  padding: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: rgb(144, 144, 144);
+  color: rgb(144, 144, 144);
+}
+.count {
+  padding: 10px;
+  font-weight: bold;
+}
+.addcartbtn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(144, 144, 144);
+  color: aliceblue;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.addcartbtn:hover {
+  background-color: rgb(72, 72, 72);
+  color: aliceblue;
+}
+.cartcard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.cartimage {
+  height: 15vh;
+  width: 10vw;
+}
+
+.productimg {
+  transition: 0.4s;
+}
+.productimg:hover {
+  transform: scale(1.1);
+}
+.banner1div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.banner1about{
+  color: rgb(255, 98, 0);
+  letter-spacing: 2px;
+}
+.banner1h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.banner1p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 40px;
+}
+
+.adminlogin{
+  width: 35vw;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+.adminlogin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.adminloginh2{
+  text-align: center;
+}
+.viewusers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.addbtn{
+  background-color: rgb(255, 216, 190);
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(119, 72, 31);
+  transition: 0.2s;
+}
+.addbtn:hover{
+  transform: scale(1.05);
+}
+.addproductdiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.addproductform{
+  display: block;
+}
+.addproductdiv3{
+  background-color: rgb(250, 212, 171);
+}
+.addproductdiv2{
+  background-color: rgb(250, 212, 171);
+  height: 60vh;
+  width: 50vw;
+}
+.addproductimg{
+  height: 59vh;
+  width: 49vw;
+}
+.addproductbtn{
+  padding: 10px;
+  border-style: none;
+  background-color: rgb(199, 119, 49);
+  border-radius: 10px;
+}
+.adminimage{
+  height: 40vh;
+  width: 225px;
+}
+/* Basic button styling */
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, rgb(170, 124, 39), rgb(255, 200, 133));
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hover effect */
+.my-button:hover {
+  background: linear-gradient(to right, rgb(255, 200, 133), rgb(170, 124, 39));
+  transform: scale(1.05);
+}
+.my-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, rgb(96, 96, 96), rgb(163, 163, 163));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover effect */
+.my-button1:hover {
+  background: linear-gradient(to right, rgb(163, 163, 163), rgb(96, 96, 96));
+  transform: scale(1.05);
+}
+.form-active{
+  background-color: rgb(218, 218, 218);
 }
